@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Button } from './ui/button';
 
 import Navbar from './Navbar';
+import MobileNavbar from './MobileNavbar';
 
 const Header = () => {
   return (
@@ -17,6 +18,9 @@ const Header = () => {
           <Link href="/contact">
             <Button>Let us talk</Button>
           </Link>
+        </div>
+        <div className="xl:hidden">
+          <MobileNavbar />
         </div>
       </div>
     </header>
