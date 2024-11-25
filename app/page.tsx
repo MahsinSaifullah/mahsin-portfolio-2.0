@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div>Mahsin Portfolio</div>;
+  return <main>Mahsin Portfolio</main>;
 }
