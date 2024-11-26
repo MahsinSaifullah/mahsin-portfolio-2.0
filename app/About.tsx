@@ -1,19 +1,12 @@
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import heroImage from './images/heroImage.jpg';
+import SectionHeader from '@/components/SectionHeader';
 
 const About = () => {
   return (
     <section className="h-screen flex justify-center flex-col max-w-6xl">
-      <div className="flex items-center mb-10">
-        <h2 className="text-slate-300 text-lg">
-          <span className="text-lime">01.</span> About Me
-        </h2>
-        <div
-          aria-hidden="true"
-          className="w-[200px] h-[1px] bg-lighestNavy ml-4"
-        />
-      </div>
+      <SectionHeader index="01" heading="About me" />
       <div className="grid md:grid-cols-3 gap-12">
         <div className="col-span-2">
           <div className="flex flex-col space-y-4">

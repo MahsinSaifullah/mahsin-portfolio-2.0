@@ -3,6 +3,7 @@
 import Tabs from '@/components/Tabs';
 import ExperienceItem from './ExperienceItem';
 import React from 'react';
+import SectionHeader from '@/components/SectionHeader';
 
 const EXPERIENCE_HASH_MAP = {
   'Connex AI': {
@@ -99,15 +100,7 @@ const Experience = () => {
 
   return (
     <section className="h-screen flex justify-center flex-col mt-10">
-      <div className="flex items-center mb-10">
-        <h2 className="text-slate-300 text-lg">
-          <span className="text-lime">02.</span> Where I've Worked
-        </h2>
-        <div
-          aria-hidden="true"
-          className="w-[200px] h-[1px] bg-lighestNavy ml-4"
-        />
-      </div>
+      <SectionHeader index="02" heading="Where I've Worked" />
       <div>
         <Tabs
           tabs={COMPANIES}
