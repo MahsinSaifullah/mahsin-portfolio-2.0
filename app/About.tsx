@@ -65,13 +65,13 @@ const About = () => {
                   <ArrowRight className="h-4 w-4 text-lime mr-2" /> Cypress
                 </li>
                 <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> Node Js
-                </li>
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> Storybook
+                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> React Native
                 </li>
                 <li className="flex items-center text-lime">
                   <ArrowRight className="h-4 w-4 text-lime mr-2" /> Material UI
+                </li>
+                <li className="flex items-center text-lime">
+                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> Node Js
                 </li>
                 <li className="flex items-center text-lime">
                   <ArrowRight className="h-4 w-4 text-lime mr-2" /> Firebase
