@@ -1,5 +1,7 @@
 'use client';
 
+import { cn } from '@/lib/utils';
+
 type TabOrientation = 'vertical' | 'horizontal';
 
 interface TabsProps {
@@ -14,6 +16,7 @@ const Tabs = ({
   orientation,
   tabs,
   onTabSelect,
+  activeIndex,
 }: React.PropsWithChildren<TabsProps>) => {
   return (
     <div
@@ -28,7 +31,13 @@ const Tabs = ({
       >
         {tabs.map((tab, index) => (
           <li
-            className="text-slate-400 p-3 hover:bg-lighestNavy hover:text-lime rounded-sm border-l-lighestNavy border-l-2 rounded-tl-none rounded-bl-none"
+            onClick={() => onTabSelect(index)}
+            className={cn(
+              'text-slate-400 p-3 hover:bg-lighestNavy hover:text-lime rounded-sm border-l-lighestNavy border-l-2 rounded-tl-none rounded-bl-none cursor-pointer',
+              {
+                'bg-lighestNavy border-l-lime text-lime': index === activeIndex,
+              }
+            )}
             key={index}
           >
             {tab}
