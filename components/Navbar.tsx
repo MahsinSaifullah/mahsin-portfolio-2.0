@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="flex justify-between  p-8 mx-auto text-slate-300">
+    <nav className="flex justify-between p-8 mx-auto text-slate-300">
       <a className="tracking-widest font-bold text-lime text-lg">
         Mahsin Saifullah .
       </a>

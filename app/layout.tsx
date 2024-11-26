@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-navy ${robotoMono.variable} h-screen`}>
+      <body className={`bg-navy ${robotoMono.variable}`}>
         <Navbar />
         {children}
       </body>

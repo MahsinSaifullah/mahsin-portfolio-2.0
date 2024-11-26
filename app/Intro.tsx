@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 
 const Intro = () => {
   return (
-    <section className="flex flex-col mt-36 space-y-6">
+    <section className="flex flex-col space-y-6 h-screen justify-center">
       <h3 className="text-lime text-sm">Hi, my name is</h3>
       <h1 className="text-5xl text-slate-300">Mahsin Saifullah</h1>
       <p className="max-w-4xl text-slate-400">
