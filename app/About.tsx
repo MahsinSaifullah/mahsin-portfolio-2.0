@@ -1,8 +1,10 @@
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+import heroImage from './images/heroImage.jpg';
 
 const About = () => {
   return (
-    <section className="h-screen flex justify-center flex-col">
+    <section className="h-screen flex justify-center flex-col max-w-6xl">
       <div className="flex items-center mb-10">
         <h2 className="text-slate-300 text-lg">
           <span className="text-lime">01.</span> About Me
@@ -12,7 +14,7 @@ const About = () => {
           className="w-[200px] h-[1px] bg-lighestNavy ml-4"
         />
       </div>
-      <div className="grid md:grid-cols-3">
+      <div className="grid md:grid-cols-3 gap-12">
         <div className="col-span-2">
           <div className="flex flex-col space-y-4">
             <p className="text-md text-slate-400 leading-7">
@@ -89,7 +91,13 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div></div>
+        <div>
+          <Image
+            src={heroImage}
+            alt="Hero Image"
+            className="rounded-full border border-lime shadow-lime shadow-md"
+          />
+        </div>
       </div>
     </section>
   );
