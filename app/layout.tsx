@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import Navbar from './components/Navbar';
+import Navbar from '../components/Navbar';
 import { Roboto_Mono, Poppins } from 'next/font/google';
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-navy ${robotoMono.variable}`}>
+      <body className={`bg-navy ${robotoMono.variable} h-screen`}>
         <Navbar />
         {children}
       </body>
