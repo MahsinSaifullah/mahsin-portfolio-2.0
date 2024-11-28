@@ -4,6 +4,7 @@ import React from 'react';
 import SectionHeader from '@/components/SectionHeader';
 import askMePDF from './images/askMePDF.png';
 import colorPicker from './images/colorPicker.png';
+import hangman from './images/hangman.png';
 import ProjectItem from './ProjectItem';
 import Tabs from '@/components/Tabs';
 
@@ -35,6 +36,15 @@ const PROJECT_HASH_MAP = {
     techStack: ['React', 'Javascript', 'Material UI', 'Chroma Js'],
     githubLink: 'https://github.com/MahsinSaifullah/React-Color-Picker-App',
     demoLink: 'https://mahsin-react-color-picker.netlify.app/',
+  },
+  'Hangman Game': {
+    name: 'Hangman Game',
+    image: hangman,
+    description:
+      'Hangman Game is a React-based web application that brings the classic word-guessing game to life. With an interactive and user-friendly interface, players can guess letters to uncover hidden words while enjoying a seamless gaming experience. Perfect for casual play and showcasing React skills.',
+    techStack: ['React', 'Javascript'],
+    githubLink: 'https://github.com/MahsinSaifullah/hangman',
+    demoLink: 'https://mahsin-hangman-game.netlify.app/',
   },
 };
 
