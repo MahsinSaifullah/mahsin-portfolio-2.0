@@ -12,6 +12,7 @@ export default {
       colors: {
         navy: '#0a192f',
         lime: '#64ffda',
+        lightNavy: '#112240',
         lighestNavy: '#233554',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
