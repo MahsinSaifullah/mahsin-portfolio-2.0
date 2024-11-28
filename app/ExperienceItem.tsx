@@ -32,7 +32,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
         {skills.map((skill) => (
           <Badge
             variant="outline"
-            className="p-2 border-lime text-lime flex justify-center items-center rounded-full"
+            className="p-2 border-lime text-lime flex justify-center items-center rounded-full min-w-max"
             key={skill}
           >
             {skill}
