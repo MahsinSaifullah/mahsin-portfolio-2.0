@@ -1,4 +1,5 @@
 import About from './About';
+import Contact from './Contact';
 import Experience from './Experience';
 import Intro from './Intro';
 import Projects from './Projects';
@@ -10,6 +11,7 @@ export default function Home() {
       <About />
       <Experience />
       <Projects />
+      <Contact />
     </main>
   );
 }
