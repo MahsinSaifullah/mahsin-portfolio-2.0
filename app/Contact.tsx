@@ -2,7 +2,10 @@ import { Button } from '@/components/ui/button';
 
 const Contact = () => {
   return (
-    <section className="h-screen flex justify-center items-center flex-col mt-10 space-y-6">
+    <section
+      id="contact"
+      className="h-screen flex justify-center items-center flex-col mt-10 space-y-6"
+    >
       <h3 className="text-lime text-md">04. What's next?</h3>
       <h2 className="text-slate-300 text-5xl font-bold tracking-tighter">
         Get in Touch

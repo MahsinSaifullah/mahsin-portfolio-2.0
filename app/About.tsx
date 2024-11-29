@@ -5,7 +5,10 @@ import SectionHeader from '@/components/SectionHeader';
 
 const About = () => {
   return (
-    <section className="h-screen flex justify-center flex-col max-w-6xl">
+    <section
+      id="about"
+      className="h-screen flex justify-center flex-col max-w-6xl"
+    >
       <SectionHeader index="01" heading="About me" />
       <div className="grid md:grid-cols-3 gap-12">
         <div className="col-span-2">

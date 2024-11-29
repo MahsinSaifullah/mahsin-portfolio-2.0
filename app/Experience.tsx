@@ -10,7 +10,10 @@ const Experience = () => {
   const [activeTab, setActiveTab] = React.useState(0);
 
   return (
-    <section className="h-screen flex justify-center flex-col mt-10">
+    <section
+      id="experience"
+      className="h-screen flex justify-center flex-col mt-10"
+    >
       <SectionHeader index="02" heading="Where I've Worked" />
       <div>
         <Tabs

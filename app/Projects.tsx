@@ -10,7 +10,7 @@ const Projects = () => {
   const [activeTab, setActiveTab] = React.useState(0);
 
   return (
-    <section className="h-screen flex justify-center flex-col ">
+    <section id="project" className="h-screen flex justify-center flex-col ">
       <SectionHeader index="03" heading="Some Things I've Built" />
       <Tabs
         tabs={PROJECTS}
