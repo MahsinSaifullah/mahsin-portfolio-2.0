@@ -1,7 +1,8 @@
 import { StaticImageData } from 'next/image';
-import askMePDF from './images/askMePDF.png';
-import colorPicker from './images/colorPicker.png';
-import hangman from './images/hangman.png';
+import askMePDF from '../app/images/askMePDF.png';
+import colorPicker from '../app/images/colorPicker.png';
+import hangman from '../app/images/hangman.png';
+import jokesApp from '../app/images/jokesApp.png';
 
 export type Project = {
   name: string;
@@ -42,6 +43,15 @@ export const PROJECT_HASH_MAP: ProjectHash = {
     techStack: ['React', 'Javascript', 'Material UI', 'Chroma Js'],
     githubLink: 'https://github.com/MahsinSaifullah/React-Color-Picker-App',
     demoLink: 'https://mahsin-react-color-picker.netlify.app/',
+  },
+  'Jokes App': {
+    name: 'Jokes App',
+    image: jokesApp,
+    description:
+      'The Jokes App is a React-based web application that fetches hilarious dad jokes from an API. Users can browse through the jokes and express their reactions by upvoting or downvoting each one. This fun and interactive app combines entertainment with practical React development skills.',
+    techStack: ['React', 'Javascript', 'Ajax'],
+    githubLink: 'https://github.com/MahsinSaifullah/jokesApp',
+    demoLink: 'https://mahsin-joke-app.netlify.app/',
   },
   'Hangman Game': {
     name: 'Hangman Game',
