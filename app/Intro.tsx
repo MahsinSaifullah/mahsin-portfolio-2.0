@@ -18,8 +18,11 @@ const Intro = () => {
       <Button
         className="max-w-fit border border-lime bg-navy text-lime px-8 py-5"
         variant="outline"
+        asChild
       >
-        Download my resume
+        <a href="mahsin_resume.pdf" download>
+          Download my resume
+        </a>
       </Button>
     </section>
   );
