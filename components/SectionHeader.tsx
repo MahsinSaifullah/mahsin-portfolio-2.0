@@ -8,7 +8,7 @@ interface SectionHeaderProps {
 const SectionHeader: React.FC<SectionHeaderProps> = ({ index, heading }) => {
   return (
     <div className="flex items-center mb-10">
-      <h2 className="text-slate-300 text-lg">
+      <h2 className="text-slate-300 text-sm md:text-lg">
         <span className="text-lime">{index}.</span> {heading}
       </h2>
       <div

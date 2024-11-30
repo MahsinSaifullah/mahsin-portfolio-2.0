@@ -12,7 +12,7 @@ const About = () => {
       <SectionHeader index="01" heading="About me" />
       <div className="grid md:grid-cols-3 gap-12">
         <div className="col-span-2">
-          <div className="flex flex-col space-y-4">
+          <div className="flex flex-col space-y-4 text-sm md:text-lg">
             <p className="text-md text-slate-400 leading-7">
               I am a passionate and results-driven Senior Frontend Engineer with
               extensive experience building user-focused, scalable web and
@@ -36,7 +36,7 @@ const About = () => {
               <p className="text-md text-slate-400 leading-7">
                 Here are a few technologies I have worked with in the past:
               </p>
-              <ul className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-4">
+              <ul className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4">
                 <li className="flex items-center text-lime">
                   <ArrowRight className="h-4 w-4 text-lime mr-2" /> Javascript
                   (ES6+)
@@ -91,7 +91,7 @@ const About = () => {
           <Image
             src={heroImage}
             alt="Hero Image"
-            className="rounded-full border border-lime shadow-lime shadow-md"
+            className="rounded-sm md:rounded-full border border-lime shadow-lime shadow-md"
           />
         </div>
       </div>
