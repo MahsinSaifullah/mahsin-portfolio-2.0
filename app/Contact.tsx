@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const Contact = () => {
   return (
@@ -17,8 +18,9 @@ const Contact = () => {
       <Button
         className="max-w-fit border border-lime bg-navy text-lime px-8 py-5"
         variant="outline"
+        asChild
       >
-        Say Hello
+        <Link href={`mailto:mahsinsaifullah@gmail.com`}>Say Hello</Link>
       </Button>
     </section>
   );
