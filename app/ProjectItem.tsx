@@ -2,6 +2,7 @@ import Image, { StaticImageData } from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import { Computer, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 interface ProjectItemProps {
   name: string;
@@ -17,6 +18,8 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   image,
   description,
   techStack,
+  githubLink,
+  demoLink,
 }) => {
   return (
     <div className="grid grid-cols-2 gap-10">
@@ -45,14 +48,22 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
           ))}
         </div>
         <div className="flex space-x-4 mt-10">
-          <Button className="max-w-fit border hover:bg-lightNavy hover:text-lime hover:border-lime bg-slate-300 text-lighestNavy px-8 py-5">
-            <Github className="h-8 w-8" /> Github
+          <Button
+            asChild
+            className="max-w-fit border hover:bg-lightNavy hover:text-lime hover:border-lime bg-slate-300 text-lighestNavy px-8 py-5"
+          >
+            <Link target="_blank" href={githubLink}>
+              <Github className="h-8 w-8" /> Github
+            </Link>
           </Button>
           <Button
             className="max-w-fit border border-lime bg-navy text-lime px-8 py-5"
             variant="outline"
+            asChild
           >
-            <Computer className="h-8 w-8" /> View Demo
+            <Link target="_blank" href={demoLink}>
+              <Computer className="h-8 w-8" /> View Demo
+            </Link>
           </Button>
         </div>
       </div>
