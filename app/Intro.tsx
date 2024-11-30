@@ -4,11 +4,11 @@ const Intro = () => {
   return (
     <section
       id="intro"
-      className="flex flex-col space-y-6 h-screen justify-center"
+      className="flex flex-col space-y-6 min-h-screen justify-center"
     >
       <h3 className="text-lime text-sm">Hi, my name is</h3>
-      <h1 className="text-5xl text-slate-300">Mahsin Saifullah</h1>
-      <p className="max-w-4xl text-slate-400">
+      <h1 className="md:text-5xl text-3xl text-slate-300">Mahsin Saifullah</h1>
+      <p className="max-w-4xl text-slate-400 text-sm md:text-lg">
         I’m a Front-end Software Engineer with expertise in building
         user-centric web and mobile applications. Passionate about creating
         seamless digital experiences, I specialize in React, TypeScript, and
@@ -16,7 +16,7 @@ const Intro = () => {
         delivering impactful solutions
       </p>
       <Button
-        className="max-w-fit border border-lime bg-navy text-lime px-8 py-5"
+        className="max-w-fit border border-lime bg-navy text-lime md:px-8 md:py-5 text-sm md:text-md"
         variant="outline"
         asChild
       >

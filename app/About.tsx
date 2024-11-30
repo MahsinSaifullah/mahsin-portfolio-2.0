@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="h-screen flex justify-center flex-col max-w-6xl"
+      className="min-h-screen flex justify-center flex-col max-w-6xl"
     >
       <SectionHeader index="01" heading="About me" />
       <div className="grid md:grid-cols-3 gap-12">

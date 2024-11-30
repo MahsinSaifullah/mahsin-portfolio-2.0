@@ -12,7 +12,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="h-screen flex justify-center flex-col mt-10"
+      className="min-h-screen flex justify-center flex-col mt-10"
     >
       <SectionHeader index="02" heading="Where I've Worked" />
       <div>
