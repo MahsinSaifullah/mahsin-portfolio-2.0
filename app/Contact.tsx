@@ -13,7 +13,7 @@ const Contact = () => {
       </h2>
       <p className="text-slate-400 max-w-2xl text-center pb-6 md:pb-10 md:text-lg text-sm">
         My inbox is always open. Whether you have a question or just want to say
-        hi, I’ll try my best to get back to you!
+        hi, I will try my best to get back to you!
       </p>
       <Button
         className="max-w-fit border border-lime bg-navy text-lime px-8 py-5"
