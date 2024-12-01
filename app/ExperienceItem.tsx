@@ -17,18 +17,18 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
 }) => {
   return (
     <article className="flex flex-col space-y-2">
-      <h3 className="text-slate-300 text-lg">
+      <h3 className="text-slate-300 text-md md:text-xl">
         {title} <span className="text-lime">@{company}</span>
       </h3>
       <h2 className="text-slate-500 text-sm">{duration}</h2>
-      <ul className="flex flex-col space-y-4  max-w-2xl text-slate-400 pt-4">
+      <ul className="flex flex-col text-sm md:text-lg space-y-3 md:space-y-4  max-w-2xl text-slate-400 pt-4">
         {details.map((detail, index) => (
           <li key={index} className="flex space-x-5">
             {detail}
           </li>
         ))}
       </ul>
-      <div className="grid grid-cols-6 gap-4 pt-4">
+      <div className="grid grid-cols-2 md:grid-cols-6 gap-4 pt-4">
         {skills.map((skill) => (
           <Badge
             variant="outline"
