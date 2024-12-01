@@ -22,7 +22,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   demoLink,
 }) => {
   return (
-    <div className="grid grid-cols-2 gap-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
       <div>
         <Image
           src={image}
@@ -36,7 +36,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         <p className="mt-4 bg-lightNavy text-slate-300 p-4 text-end rounded-sm text-sm shadow-lg">
           {description}
         </p>
-        <div className="grid grid-cols-5 gap-2 pt-4">
+        <div className="grid grid-cols-3 lg:grid-cols-5 gap-2 pt-4">
           {techStack.map((tech) => (
             <Badge
               variant="outline"
@@ -47,7 +47,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
             </Badge>
           ))}
         </div>
-        <div className="flex space-x-4 mt-10">
+        <div className="flex space-x-4 mt-10 items-center justify-center">
           <Button
             asChild
             className="max-w-fit border hover:bg-lightNavy hover:text-lime hover:border-lime bg-slate-300 text-lighestNavy px-8 py-5"

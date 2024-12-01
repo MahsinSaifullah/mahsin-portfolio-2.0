@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <section
       id="project"
-      className="min-h-screen flex justify-center flex-col "
+      className="min-h-screen flex justify-center flex-col mt-24 md:mt-10"
     >
       <SectionHeader index="03" heading="Some Things I've Built" />
       <Tabs
