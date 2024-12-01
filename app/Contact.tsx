@@ -7,7 +7,7 @@ const Contact = () => {
       id="contact"
       className="min-h-screen flex justify-center items-center flex-col mt-10 space-y-6"
     >
-      <h3 className="text-lime text-sm md:text-md">04. What's next?</h3>
+      <h3 className="text-lime text-sm md:text-md">04. What&apos;s next?</h3>
       <h2 className="text-slate-300 text-3xl md:text-5xl font-bold tracking-tighter">
         Get in Touch
       </h2>
