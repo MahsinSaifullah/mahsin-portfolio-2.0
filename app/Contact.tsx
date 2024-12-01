@@ -7,11 +7,11 @@ const Contact = () => {
       id="contact"
       className="min-h-screen flex justify-center items-center flex-col mt-10 space-y-6"
     >
-      <h3 className="text-lime text-md">04. What's next?</h3>
-      <h2 className="text-slate-300 text-5xl font-bold tracking-tighter">
+      <h3 className="text-lime text-sm md:text-md">04. What's next?</h3>
+      <h2 className="text-slate-300 text-3xl md:text-5xl font-bold tracking-tighter">
         Get in Touch
       </h2>
-      <p className="text-slate-400 max-w-2xl text-center pb-10">
+      <p className="text-slate-400 max-w-2xl text-center pb-6 md:pb-10 md:text-lg text-sm">
         My inbox is always open. Whether you have a question or just want to say
         hi, I’ll try my best to get back to you!
       </p>
