@@ -1,8 +1,10 @@
+import { Menu } from 'lucide-react';
 import Link from 'next/link';
+import NavDrawer from './NavDrawer';
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between p-8 mx-auto text-slate-300">
+    <nav className="flex justify-between p-8 mx-auto text-slate-300 items-center">
       <a className="tracking-widest font-bold text-lime text-lg">
         Mahsin Saifullah .
       </a>
@@ -28,6 +30,7 @@ const Navbar = () => {
           </li>
         </Link>
       </ul>
+      <NavDrawer />
     </nav>
   );
 };
