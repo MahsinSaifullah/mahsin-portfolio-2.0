@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from '../components/Navbar';
 import { Roboto_Mono } from 'next/font/google';
-import Footer from './Footer';
+import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Mahsin Saifullah',
