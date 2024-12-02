@@ -2,6 +2,7 @@ import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import heroImage from './images/heroImage.jpg';
 import SectionHeader from '@/components/SectionHeader';
+import { SKILLS } from '@/constants/skills';
 
 const About = () => {
   return (
@@ -22,13 +23,6 @@ const About = () => {
               satisfaction.
             </p>
             <p className="text-md text-slate-400 leading-7">
-              Throughout my career, I’ve led impactful projects, including
-              developing infinite scrolling features for eCommerce platforms,
-              building live chat and voice communication systems, and creating a
-              robust internal component library that increased productivity and
-              improved user experience.
-            </p>
-            <p className="text-md text-slate-400 leading-7">
               With a focus on continuous learning and team collaboration, I
               strive to create digital experiences that leave a lasting impact.
             </p>
@@ -37,52 +31,13 @@ const About = () => {
                 Here are a few technologies I have worked with in the past:
               </p>
               <ul className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4">
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> Javascript
-                  (ES6+)
-                </li>
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> Typescript
-                </li>
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> React
-                </li>
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> Next Js
-                </li>
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> Redux
-                </li>
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> React Query
-                </li>
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> Jest
-                </li>
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> Cypress
-                </li>
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> React Native
-                </li>
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> Material UI
-                </li>
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> Node Js
-                </li>
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> Firebase
-                </li>
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> MongoDB
-                </li>
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> PostgreSQL
-                </li>
-                <li className="flex items-center text-lime">
-                  <ArrowRight className="h-4 w-4 text-lime mr-2" /> Express
-                </li>
+                {SKILLS.map((skill, index) => {
+                  return (
+                    <li key={index} className="flex items-center text-lime">
+                      <ArrowRight className="h-4 w-4 text-lime mr-2" /> {skill}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
@@ -90,6 +45,7 @@ const About = () => {
         <div>
           <Image
             src={heroImage}
+            priority
             alt="Hero Image"
             className="rounded-sm md:rounded-full border border-lime shadow-lime shadow-md"
           />

@@ -1,0 +1,18 @@
+export const SKILLS = [
+  'Javascript (ES6+)',
+  'Typescript',
+  'React',
+  'Next Js',
+  'Redux',
+  'React Query',
+  'Jest',
+  'Cypress',
+  'React Native',
+  'Material UI',
+  'Tailwind css',
+  'Node Js',
+  'Firebase',
+  'MongoDB',
+  'PostgreSQL',
+  'Express',
+];
